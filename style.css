@@ -1,0 +1,92 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+button {
+    font: inherit;
+    aspect-ratio: 1/1;
+}
+
+body {
+    font-size: 3rem;
+    font-family: sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    border: .2rem solid #333;
+    width: 90%;
+    max-width: 40rem;
+    margin: 0 auto;
+    padding: 1.6rem;
+}
+
+.display {
+    background-color: #333;
+    margin-bottom: 1rem;
+    aspect-ratio: 4/1;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.display p {
+    margin-right: 2rem;
+}
+
+.display p:first-of-type {
+    font-size: 1.6rem;
+}
+
+.keypad {
+    /* border: 0.2rem solid #333; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 1rem;
+}
+
+.utilities,
+.numbers,
+.operations {
+    display: contents;
+}
+
+button[name="operator"] {
+    grid-column: 4/5;
+}
+
+button[value="/"] {
+    grid-row: 1/2;
+}
+
+button[value="*"] {
+    grid-row: 2/3;
+}
+
+button[value="-"] {
+    grid-row: 3/4;
+}
+
+button[value="+"] {
+    grid-row: 4/5;
+}
+
+button[value="="] {
+    grid-column: 3/5;
+    aspect-ratio: auto;
+}
