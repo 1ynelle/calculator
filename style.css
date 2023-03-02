@@ -13,7 +13,7 @@ html {
 }
 
 body {
-    background-color: #181c20;
+    background-color: #46505A;
     font-family: 'Golos Text', sans-serif;
     font-size: 2.8rem;
     min-height: 100vh;
@@ -45,6 +45,9 @@ body {
     aspect-ratio: 4/1;
     background-color: #130909;
     margin-bottom: 1rem;
+    padding: 1rem 2rem;
+    word-wrap: break-word;
+    word-break: break-all;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -52,7 +55,6 @@ body {
 }
 
 .display p {
-    margin-right: 2rem;
     color: #DE4C57;
 }
 
